@@ -5,15 +5,15 @@
     gap: 10px;
 }
 .new-collections h1{
-    color: #171717;
-    font-size: 50px;
+    color: var(--highText);
+    font-size: 40px;
     font-weight: 600;
 }
 .new-collections hr{
-    width: 200px;
-    height: 6px;
+    width: 700px;
+    height: 3px;
     border-radius: 10px;
-    background: #252525;
+    background: var(--lineColor);
 
 }
 .collections{

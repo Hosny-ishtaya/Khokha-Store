@@ -16,18 +16,18 @@
     align-items: center;
 }
 .offers-left h1{
-    color: #171717;
+    color: var(--highText);
     font-size: 22px;
     font-weight: 600;
 }
 .offers-left button{
-    width: 282px;
-    height: 70px;
+    width: 250px;
+    height: 60px;
     border-radius: 35px;
-    background: #ff4141;
+    background: var(--btnColor);
     border: none;
-    color: white;
-    font-size: 22px;
+    color: var(--whiteColor);
+    font-size: 18px;
     font-weight: 500;
     margin-top: 30px;
     cursor: pointer;
