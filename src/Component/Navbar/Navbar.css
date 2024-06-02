@@ -28,6 +28,11 @@
   font-weight: 500;
   gap: 50px;
 }
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+
+}
 .nav-menu li{
   display: flex;
   flex-direction: column;
@@ -80,4 +85,62 @@
   border-radius: 11px;
   color: var(--whiteColor);
   font-size: 14px;
+}
+
+/* Mobile Menu Icon Styles */
+.mobile-menu {
+  display: none; /* Hide by default for larger screens */
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: #626262;
+}
+
+/* Mobile Menu Animation */
+.hamburger.open .line:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+     /* Hide the menu by default */
+  }
+
+  .nav-menu.open {
+    display: flex; 
+    flex-direction: row;/* Show the menu when active */
+
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: row; /* Show the mobile menu icon */
+    cursor: pointer;
+  }
+
+  .nav-logo,
+  .nav-login-cart {
+    display: none; /* Hide logo and login/cart icons for smaller screens */
+  }
 }
