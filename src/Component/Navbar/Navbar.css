@@ -140,7 +140,8 @@
   }
 
   .nav-logo,
-  .nav-login-cart {
+  .nav-login-cart  {
     display: none; /* Hide logo and login/cart icons for smaller screens */
   }
+  
 }

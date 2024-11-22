@@ -1,17 +1,21 @@
 .footer {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 50px;
   margin-top: 50px;
-  
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.footer-logo img {
+  width: 400px;
+  height: 100px;
 }
 .footer-logo p {
   color: var(--outerSpaceColor);
